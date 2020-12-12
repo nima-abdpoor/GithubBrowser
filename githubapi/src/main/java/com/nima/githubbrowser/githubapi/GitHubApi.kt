@@ -1,18 +1,18 @@
 package com.nima.githubbrowser.githubapi
 
-import com.nima.githubbrowser.githubapi.model.RepoApiMode
+import com.nima.githubbrowser.githubapi.model.RepoApiModel
 import com.nima.githubbrowser.githubapi.model.UserApiModel
 import javax.inject.Inject
 import javax.inject.Singleton
 
 interface GitHubApi {
-    fun getTopRepositories() : List<RepoApiMode>
+    fun getTopRepositories() : List<RepoApiModel>
 }
 @Singleton
 class MockGitHubApi @Inject constructor(): GitHubApi{
-    override fun getTopRepositories(): List<RepoApiMode> {
+    override fun getTopRepositories(): List<RepoApiModel> {
         return listOf(
-            RepoApiMode(
+            RepoApiModel(
                 id = 1L,
                 name = "Mock" ,
                 description = "Mock Repo Description" ,

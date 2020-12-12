@@ -1,6 +1,6 @@
 package com.nima.githubbrowser.githubapi.model
 
-data class RepoApiMode(
+data class RepoApiModel(
     val id : Long ,
     val name : String ,
     val description  :String,

@@ -47,4 +47,5 @@ dependencies {
 
     //androidX
     implementation deps.androidx.recyclerview
+    implementation deps.androidx.constraintlayout
 }

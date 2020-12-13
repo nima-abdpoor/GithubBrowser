@@ -51,4 +51,7 @@ dependencies {
     //dagger
     implementation deps.core
     kapt deps.compiler
+
+    //androidx
+    implementation deps.androidx.constraintlayout
 }

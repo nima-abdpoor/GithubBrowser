@@ -25,12 +25,16 @@ ext.versions = [
         "minSdk"    : 21,
         "targetSdk" : 30,
         "dagger"    : "2.30.1",
-        "truth"     : "1.1"
+        "truth"     : "1.1" ,
+        "recyclerview" : "1.1.0"
 ]
 ext.deps = [
         "core"    : "com.google.dagger:dagger:${versions.dagger}",
         "compiler": "com.google.dagger:dagger-compiler:${versions.dagger}",
-        "truth" : "com.google.truth:truth:${versions.truth}"
+        "truth" : "com.google.truth:truth:${versions.truth}",
+        "androidx" :[
+                "recyclerview" : "androidx.recyclerview:recyclervie:${versions.recyclerview}"
+        ]
 ]
 
 task clean(type: Delete) {
